@@ -1,0 +1,275 @@
+header {
+  position: fixed;
+  background: #f9f9f8;
+  width: 100%;
+}
+nav ul{
+  text-align: center;
+}
+nav li {
+  display: inline;
+}
+nav a, .headerlogo {
+  display: inline;
+  color: #000000;
+  font-size: 22px;
+  padding: 22px 15px;
+  text-decoration: none;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+#about {
+  display: flex;
+}
+#portrait {
+  width: 50%;
+  position: relative;
+}
+#portrait_image {
+  background-size: cover;
+  background-image: url("../img/bored.png");
+  background-position: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+#beschreibung {
+  width: 50%;
+  background: #cee0d9;
+}
+#name {
+  min-height: 200px;
+  margin: 5%;
+}
+#adresse {
+  color: #efefef;
+  background: #343434;
+  min-height: 200px;
+  padding: 5%;
+}
+body{
+  font-size: 25px;
+  font-family: Oswaldesque, sans-serif;
+  line-height: 21px;
+  color: #999999;
+  background-color: #f9f9f8;
+}
+a {
+  color: #ccf4e6;
+  text-decoration: none;
+}
+#beschreibung h1{
+  color: #343434;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+#beschreibung span {
+  color: #7a7a7a;
+  font-size: 25px;
+  text-transform: none;
+}
+main {
+  width: 100%;
+  padding-top: 100px;
+}
+#wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 5%;
+}
+#wrapper h1{
+  text-align: center;
+  line-height: 4em;
+}
+.skills-icon {
+  display: flex;
+  flex-flow: row wrap;
+}
+#erstes-icon, #zweites-icon, #drittes-icon {
+  height: 250px;
+  width: 33.3333%;
+  text-align: center;
+}
+#erstes-icon {
+  background: url("../img/icon-ps.svg")50% 50% no-repeat;
+}
+#zweites-icon {
+  background: url("../img/icon-code.svg")50% 50% no-repeat;
+}
+#drittes-icon {
+  background: url("../img/icon-ai.svg")50% 50% no-repeat;
+}
+#cv, #jobs, #ausbildungen, {
+  float: middle;
+}
+.cv-eintrag {
+  width: 100%;
+  float: middle;
+}
+.cv-eintrag img {
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.links p {
+  display: inline-block;
+  padding: 15px;
+  border: 1px #efefef;
+}
+.rechts {
+  width: 80%;
+  vertical-align: middle;
+}
+.cv-titel {
+  font-size: 1.2em;
+  line-height: 3em;
+  font-weight:  bolder;
+  color: #cee0d9;
+}
+.cv-beschreibung {
+  border-style: hidden;
+  padding-left: 0px 15px 15px 15px;
+  font-weight: lighter;
+}
+h1 {
+  font-weight: lighter;
+}
+#portfolio {
+  float: left;
+}
+.portfolio-kacheln {
+  display: flex;
+  flex-flow: row wrap;
+}
+.portfolio-eintrag {
+  position: relative;
+  width: 33.3333%;
+  float: middle;
+}
+.portfolio-eintrag img {
+  width: 100%;
+  display: block;
+}
+.portfolio-eintrag .arbeit-title {
+  background: #cee0d9;
+  height: 100%;
+  color: white;
+  padding: 45% 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  visibility: hidden;
+}
+.portfolio-eintrag:hover .arbeit-title {
+  visibility: visible;
+}
+img.img-links {
+  width: 48%;
+  float: left;
+  margin: 0 4% 4% 0;
+}
+img.img-rechts {
+  width: 48%;
+  margin: 0 0 4% 0;
+}
+.back {
+  width: 100%;
+  text-align: center;
+  height: 4em;
+}
+.detailseite p {
+  text-align: center;
+}
+.detailseite img:hover {
+  color: #cee0d9;
+}
+nav a:hover {
+  color: #cee0d9;
+  cursor: pointer;
+}
+#formular {
+  clear: both;
+  padding: 1rem 0;
+}
+.kontaktformular {
+  width: 70%;
+  margin: 0 auto;
+}
+.form-control, textarea {
+  padding: 2%;
+  width: 92%;
+  margin: 2%;
+}
+.absenden {
+  padding: 2%;
+  width: 96%;
+  margin: 2%;
+  background: #cee0d9;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+.absenden:hover {
+  background: #9fc2b5;
+}
+h1 {
+  text-align: center;
+}
+footer {
+  background: #343434;
+  color: white;
+  padding: 2% 0;
+  margin: 2% 0 0 0;
+  text-align: center;
+}
+@media only screen and (max-width: 960px) {
+  #about {
+    display: flex;
+    flex-flow: row-wrap;
+  }
+  #beschreibung {
+    width: 100%;
+  }
+  #portrait {
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+  #erstes-icon, #zweites-icon, #drittes-icon {
+    width: 100%;
+  }
+  section #cv {
+    padding: 0 5%;
+  }
+  .links {
+    width: 100%;
+    text-align: center;
+  }
+  .rechts {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 480px){
+  nav li {
+    display: block;
+    line-height: 0.1em;
+  }
+  ul {
+    padding: 0;
+  }
+  nav {
+    position: relative;
+    width: 100%;
+  }
+  main {
+    padding: 0;
+  }
+  .portfolio-eintrag {
+    margin: o auto;
+    text-align: center;
+    width: 100%;
+  }
+}
